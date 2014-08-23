@@ -3,10 +3,14 @@ using System.Collections;
 
 public class Spin : MonoBehaviour {
 
-	public int angularSpeed;
+	public float angularSpeed;
 
 	public void SpinArrow(){
-		rigidbody2D.AddTorque (angularSpeed);
-		Debug(
+		rigidbody2D.angularVelocity = Random.Range(angularSpeed - 1, angularSpeed + 1);
+		Debug.Log ("Spin!! button");
+	}
+
+	void Update () {
+		Debug.Log (rigidbody2D.angularVelocity);
 	}
 }
