@@ -250,7 +250,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 203602007}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -268,8 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112c8ddac9d299d4cb87098097ad7ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 10
-  angluarDrag: 1
+  angularSpeed: 1000
 --- !u!1 &500061414
 GameObject:
   m_ObjectHideFlags: 0
