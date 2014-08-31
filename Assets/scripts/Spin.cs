@@ -4,13 +4,13 @@ using System.Collections;
 public class Spin : MonoBehaviour {
 
 	public float angularSpeed;
+	public string currentPart;
 
 	public void SpinArrow(){
-		rigidbody2D.angularVelocity = Random.Range(angularSpeed - 1, angularSpeed + 1);
-		Debug.Log ("Spin!! button");
+		rigidbody2D.angularVelocity = Random.Range(angularSpeed * 0.7f, angularSpeed * 1.3f);
 	}
 
-	void Update () {
-		Debug.Log (rigidbody2D.angularVelocity);
+	public void OnTriggerEnter2D(Collider2D other) {
+		currentPart = other.name;
 	}
 }
